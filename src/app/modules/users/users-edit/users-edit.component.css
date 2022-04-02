@@ -1,0 +1,158 @@
+.col-md-8 {
+    margin-bottom: 10px;
+}
+
+fieldset {
+    letter-spacing: 1px;
+    color: #00120B;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.4);
+    width: 60vw;
+}
+
+fieldset input,
+select {
+    letter-spacing: 1px;
+    border: 2px solid #8ac04e;
+    border-radius: 3px;
+    height: 40px;
+    padding: 5px;
+    text-align: center;
+    transition: all .1s ease-in;
+}
+
+fieldset input:hover,
+select:hover {
+    background-color: #d8e4ff;
+}
+
+fieldset label {
+    letter-spacing: 1px;
+}
+
+fieldset option {
+    background-color: #35605a;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.save {
+    background-color: #31e981;
+    color: white;
+    font-weight: 600;
+    border: none !important;
+    margin-top: 15px;
+    padding: 10px 5px 10px 5px;
+    text-align: center;
+    transition: all .1s ease-in;
+}
+
+.save:hover {
+    opacity: .8;
+    background-color: #31e981 !important;
+}
+
+.cancel {
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    height: 40px;
+    padding: 10px 5px 10px 5px;
+    border-radius: 3px;
+    border: none !important;
+    margin-top: 15px;
+    text-align: center;
+    transition: all .1s ease-in;
+}
+
+.cancel:hover {
+    opacity: .8;
+    background-color: red !important;
+}
+
+h1 {
+    font-size: 2em;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #8ac04e;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 575.98px) {
+    fieldset {
+        width: 90vw;
+        padding: 20px;
+    }
+    h1 {
+        margin-left: 2px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    fieldset {
+        width: 80vw;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    fieldset {
+        width: 90vw;
+        margin-right: 15vw;
+    }
+    .conatiner-storage {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin-right: 15vw;
+    }
+    h1 {
+        text-align: left;
+        margin-left: 30vw;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) and (orientation:landscape) {
+    fieldset {
+        width: 75vw;
+        margin-right: 15vw;
+    }
+    .conatiner-storage {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin-right: 15vw;
+    }
+    h1 {
+        text-align: left;
+        margin-left: 20vw;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1199px) and(orientation: landscape) {
+    fieldset {
+        width: 80vw;
+        margin-right: 15vw;
+    }
+    .conatiner-storage {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin-right: 15vw;
+    }
+    h1 {
+        text-align: left;
+        margin-left: 30vw;
+    }
+}

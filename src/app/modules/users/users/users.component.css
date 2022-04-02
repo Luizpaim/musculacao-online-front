@@ -1,0 +1,334 @@
+.desktop {
+    display: block;
+}
+
+.register {
+    background-color: #31e981;
+    color: white;
+    font-weight: 600;
+    padding: 5px 5px 5px 10px;
+    height: 40px;
+    border-radius: 3px;
+    border: none;
+    margin-right: 10px;
+    text-align: center;
+    transition: all ease-in;
+    font-size: 15px;
+    width: 30vw;
+}
+
+.all {
+    background-color: #35605a;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 5px 0px 5px 10px;
+    height: 40px;
+    border-radius: 3px;
+    border: none;
+    margin-right: 20px;
+    text-align: center;
+    transition: all ease-in;
+    width: 30vw;
+}
+
+.all:hover {
+    opacity: .8;
+}
+
+.register:hover {
+    opacity: .8;
+}
+
+.pesquisar {
+    font-size: 15px;
+    margin-left: 10px;
+    background-color: #6b818c;
+    color: white;
+    font-weight: 600;
+    height: 40px;
+    padding: 5px 5px 5px 10px;
+    border-radius: 3px;
+    border: none;
+    text-align: center;
+    transition: all ease-in;
+    width: 15vw;
+}
+
+.pesquisar:hover {
+    opacity: .8;
+}
+
+.pesquisa {
+    height: 40px;
+    border-radius: 3px;
+    border: none;
+    text-align: center;
+    width: 40vw;
+    border: 1px solid #8ac04e;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 75vw;
+}
+
+table {
+    width: 75vw;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+}
+
+table th {
+    background-color: #d8e4ff;
+    border-bottom: 1px solid #d8e4ff;
+    color: #35605a;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: left;
+    padding: 10px;
+}
+
+table td {
+    letter-spacing: 1px;
+    text-align: left;
+    font-weight: 500;
+    padding: 10px;
+    border-bottom: 1px solid #d8e4ff;
+}
+
+table tr:hover {
+    background-color: #d8e4ff;
+}
+
+.delete {
+    cursor: pointer;
+}
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 575.98px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    .search {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+    }
+    .register {
+        margin: 0 0 10px 0;
+        width: 90vw;
+        padding: 5px 5px 5px 15px;
+    }
+    .all {
+        margin: 0 0 10px 0;
+        width: 90vw;
+        padding: 5px 5px 5px 15px;
+    }
+    .pesquisar {
+        margin: 10px 0 0 0;
+        width: 90vw;
+        padding: 5px 5px 5px 15px;
+    }
+    .pesquisa {
+        width: 90vw;
+    }
+    table,
+    th,
+    td,
+    tr {
+        width: 100%;
+        font-size: 1em;
+        padding: 0;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .search {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+    }
+    .register {
+        margin: 0 0 10px 0;
+        width: 90vw;
+        padding: 5px 5px 5px 15px;
+    }
+    .all {
+        margin: 0 0 10px 0;
+        width: 90vw;
+        padding: 5px 5px 5px 15px;
+    }
+    .pesquisar {
+        margin: 10px 0 0 0;
+        width: 90vw;
+        padding: 5px 5px 5px 15px;
+    }
+    .pesquisa {
+        width: 90vw;
+    }
+    table,
+    th,
+    td,
+    tr {
+        font-size: 1em;
+        padding: 0;
+        width: 90vw;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .desktop {
+        display: block;
+        display: flex;
+        justify-content: center;
+        width: 90vw;
+        margin-right: 15vw;
+    }
+    .mobile {
+        display: none;
+        width: 100vw;
+    }
+    .search {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        margin-right: 20vw;
+    }
+    .register {
+        margin: 0 0 10px 0;
+        width: 80vw;
+        padding: 5px 5px 5px 15px;
+    }
+    .all {
+        margin: 0 0 10px 0;
+        width: 80vw;
+        padding: 5px 5px 5px 15px;
+    }
+    .pesquisar {
+        margin: 10px 0 0 0;
+        width: 80vw;
+        padding: 5px 5px 5px 15px;
+    }
+    .pesquisa {
+        width: 80vw;
+    }
+    table,
+    th,
+    td,
+    tr {
+        font-size: 1em;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation:landscape) {
+    .desktop {
+        display: block;
+        display: flex;
+        justify-content: center;
+        margin-right: 15vw;
+    }
+    .mobile {
+        display: none;
+        width: 100vw;
+    }
+    .search {
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20vw;
+    }
+    .register {
+        margin: 0 0 10px 0;
+        width: 90vw;
+        padding: 5px 5px 5px 15px;
+    }
+    .all {
+        margin: 0 0 10px 0;
+        width: 90vw;
+        padding: 5px 5px 5px 15px;
+    }
+    .pesquisar {
+        margin: 10px 0 0 0;
+        width: 90vw;
+        padding: 5px 5px 5px 15px;
+    }
+    .pesquisa {
+        width: 90vw;
+    }
+    table,
+    th,
+    td,
+    tr {
+        font-size: 1em;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) and (orientation:landscape) {
+    .desktop {
+        display: block;
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+    }
+    .mobile {
+        display: none;
+    }
+    .search {
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .register {
+        margin: 0 0 10px 0;
+        width: 90vw;
+        padding: 5px 5px 5px 15px;
+    }
+    .all {
+        margin: 0 0 10px 0;
+        width: 90vw;
+        padding: 5px 5px 5px 15px;
+    }
+    .pesquisar {
+        margin: 10px 0 0 0;
+        width: 90vw;
+        padding: 5px 5px 5px 15px;
+    }
+    .pesquisa {
+        width: 90vw;
+    }
+    table,
+    th,
+    td,
+    tr {
+        font-size: 1em;
+        padding: 0;
+    }
+}

@@ -1,0 +1,83 @@
+<div class="container search">
+
+
+    <button class="register" (click)="create()">Novo Funcionário<img src="../../../../assets/add-user.png" alt="register" title="Cadastrar funcionário"></button>
+
+    <button class="all" (click)="employees()">Todos Funcionário<img src="../../../../assets/user.png" alt="register" title="Cadastrar funcionário"></button>
+
+    <input type="text" [(ngModel)]="filter" class="pesquisa" placeholder="Buscar por nome ou e-mail">
+
+    <button class="pesquisar" (click)="search()">Buscar<img src="../../../../assets/search.png" alt="buscar" title="Todos Funcionários"></button>
+
+</div>
+
+<div class="container-fluid desktop">
+    <table mat-table [dataSource]="userList">
+        <ng-container matColumnDef="profile">
+            <th mat-header-cell *matHeaderCellDef>Perfil</th>
+            <td mat-cell *matCellDef="let row">{{row.profile.name}}</td>
+        </ng-container>
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef>Nome</th>
+            <td mat-cell *matCellDef="let row">{{row.name}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="email">
+            <th mat-header-cell *matHeaderCellDef>E-mail</th>
+            <td mat-cell *matCellDef="let row">{{row.email}}</td>
+        </ng-container>
+
+
+        <ng-container matColumnDef="action">
+            <th mat-header-cell *matHeaderCellDef>Ações</th>
+            <td mat-cell *matCellDef="let row">
+                <a routerLink="/users/details/{{row._id}}" class="details">
+                    <img src="../../../../assets/contact-book.png" alt="detalhes" title="Informações detalhadas">
+                </a>
+                <a routerLink="/users/edit/{{row._id}}" class="edit">
+                    <img src="../../../../assets/edit.png" alt="edit" title="Editar informações">
+                </a>
+                <a (click)="deleteUser(row._id)" class="delete">
+                    <img src="../../../../assets/delete.png" alt="delete" title="Excluir informações">
+                </a>
+
+            </td>
+        </ng-container>
+
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns;"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+    </table>
+
+</div>
+<div class="container-fluid mobile">
+    <table mat-table [dataSource]="userList">
+
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef>Nome</th>
+            <td mat-cell *matCellDef="let row">{{row.name}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="action">
+            <th mat-header-cell *matHeaderCellDef>Ações</th>
+            <td mat-cell *matCellDef="let row">
+                <a routerLink="/users/details/{{row._id}}" class="details">
+                    <img src="../../../../assets/contact-book.png" alt="detalhes" title="Informações detalhadas">
+                </a>
+                <a routerLink="/users/edit/{{row._id}}" class="edit">
+                    <img src="../../../../assets/edit.png" alt="edit" title="Editar informações">
+                </a>
+                <a (click)="deleteUser(row._id)" class="delete">
+                    <img src="../../../../assets/delete.png" alt="delete" title="Excluir informações">
+                </a>
+
+            </td>
+        </ng-container>
+
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumnsMobile;"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumnsMobile;"></tr>
+
+    </table>
+</div>

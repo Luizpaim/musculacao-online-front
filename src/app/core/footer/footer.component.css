@@ -1,0 +1,14 @@
+    .footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #8ac04e;
+        font-weight: 600;
+        letter-spacing: 1px;
+        bottom: 0;
+        position: fixed;
+        z-index: 1;
+        padding: 3px;
+        background-color: white !important;
+    }

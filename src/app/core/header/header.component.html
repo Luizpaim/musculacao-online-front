@@ -1,0 +1,25 @@
+<header>
+    <div class="container-storage">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light menuBase">
+            <div class="logo">
+                <a class="navbar-brand" routerLink="/users"><img src="../assets/logo.png" alt="soon" class="imgSoon"></a>
+            </div>
+            <div class="logout"> <a class="navbar-brand" (click)="logout()">Sair<img src="../assets/close.png" alt="logout"></a></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav navMobile">
+                    <li class="nav-item active linkMobile">
+                        <a class="navbar-brand" (click)="logout()">Sair<img src="../assets/close.png" alt="sair"></a>
+                    </li>
+                    <li class="nav-item active linkMobile">
+                        <a routerLink="/users">Funcionários <img src="../../../assets/user.png" alt="user"></a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+</header>

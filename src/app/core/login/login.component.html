@@ -1,0 +1,24 @@
+<div class="container-fluid">
+    <div class="col-md-4">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <fieldset class="fundoForm">
+                <div class="CaseSoon">
+                    <img src="../../../assets/logo.png" class="soon" alt="soon">
+                </div>
+                <div class="field">
+                    <label for="email">E-mail</label><br>
+                    <input type="email" matInput placeholder="Digite seu Email" maxlength="50" formControlName="email" required><br>
+                </div>
+
+
+                <div class="field">
+                    <label for="password">Senha</label><br>
+                    <input type="password" matInput placeholder="Digite Sua Senha" formControlName="password" required><br>
+                </div>
+                <div class="field">
+                    <input class="login" type="submit" value="Entrar">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>

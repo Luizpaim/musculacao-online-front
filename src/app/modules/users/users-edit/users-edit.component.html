@@ -1,0 +1,46 @@
+<div class="container-storage">
+    <h1>
+        {{ userId !== '' ? 'Editar Funcionário' : ' Novo Funcionário' }}</h1>
+    <form class="form-group" [formGroup]="usersForm" novalidate>
+
+        <div class="col-md-8">
+            <fieldset>
+                <label for="name">Nome</label>
+                <input type="text" formControlName="name" placeholder="Nome completo" required>
+                <label for="email">E-mail</label>
+                <input type="email" formControlName="email" placeholder="E-mail válido" required>
+            </fieldset>
+        </div>
+        <div class="col-md-8">
+            <fieldset>
+                <label for="birth_date">Data Nascimento</label>
+                <input type="date" formControlName="birth_date" required>
+                <label for="sex">Sexo</label>
+                <select name="sex" id="sex" formControlName="sex" required>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+        </select>
+            </fieldset>
+        </div>
+        <div class="col-md-8" *ngIf="userId === ''">
+            <fieldset>
+                <label for="password">Senha</label>
+                <input type="password" formControlName="password" placeholder="Crie uma senha" required>
+                <label for="password">Confirme a senha</label>
+                <input type="password" formControlName="confirmPassword" placeholder="Confirme sua senha" name="confirmPassword" required>
+            </fieldset>
+        </div>
+        <div class="col-md-8">
+            <fieldset>
+                <label for="profile">Perfil</label>
+                <select name="profile" id="profile" placeholder="Perfil" formControlName="profile" required>
+               <option  *ngFor="let profile of profilesList" [value]="profile._id">{{profile.name}}</option>
+           
+              
+           </select>
+                <input type="submit" class="save" value="Salvar" (click)="save()">
+                <input class="cancel" type="submit" value="Cancelar" (click)="returnToUsersPage()">
+            </fieldset>
+        </div>
+    </form>
+</div>

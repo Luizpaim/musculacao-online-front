@@ -1,0 +1,60 @@
+    .imgSoon {
+        width: 100px;
+        margin-left: 4vw;
+    }
+    
+    .linkMobile {
+        display: none;
+    }
+    
+    .menuBase {
+        width: 100%;
+        top: 0;
+        padding: 0;
+        z-index: 4;
+        position: fixed;
+        background-color: white !important;
+    }
+    
+    .logout {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    
+    .logout a {
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #8ac04e;
+        cursor: pointer;
+    }
+    
+    .navbar-toggler {
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+        margin-right: 4vw !important;
+    }
+    
+    @media(max-width: 992px) {
+        .logout {
+            display: none;
+        }
+        .linkMobile {
+            display: block;
+        }
+        .navMobile {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .navMobile a {
+            text-decoration: none;
+            color: #8ac04e;
+            cursor: pointer;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        .navMobile li {
+            margin-top: 20px;
+            padding: 0;
+        }
+    }
